@@ -1,0 +1,14 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>UmbracoPropertyEditor.manifest</DefaultName>
+    <Name>UmbracoPropertyEditor</Name>
+    <Description>It creates a Property Editor</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>Umbraco.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.manifest" ReplaceParameters="false">package.manifest</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
