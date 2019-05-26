@@ -1,7 +1,8 @@
-<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+<VSTemplate Version="3.0.0" 
+  xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
   <TemplateData>
     <DefaultName>UmbracoApiController.cs</DefaultName>
-    <Name>UmbracoApiController</Name>
+    <Name>Umbraco Api Controller</Name>
     <Description>Creates an Umbraco Api Controller</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>10</SortOrder>
@@ -9,6 +10,6 @@
   </TemplateData>
   <TemplateContent>
     <References />
-    <ProjectItem SubType="" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">ApiController.cs</ProjectItem>
+    <ProjectItem TargetFileName="$fileinputname$.cs" ReplaceParameters="true">ApiController.cs</ProjectItem>
   </TemplateContent>
 </VSTemplate>

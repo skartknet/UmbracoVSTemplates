@@ -1,8 +1,9 @@
-<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+<VSTemplate Version="3.0.0" 
+  xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
   <TemplateData>
-    <DefaultName>UmbracoVSTemplates.cs</DefaultName>
-    <Name>UmbracoVSTemplates</Name>
-    <Description>desc</Description>
+    <DefaultName>SurfaceController.cs</DefaultName>
+    <Name>Umbraco Surface Controller</Name>
+    <Description>Creates an Umbraco Surface Controller</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>10</SortOrder>
     <Icon>Umbraco.ico</Icon>
