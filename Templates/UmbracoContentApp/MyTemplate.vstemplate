@@ -1,14 +1,17 @@
-<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+<VSTemplate Version="3.0.0" 
+  xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
   <TemplateData>
-    <DefaultName>UmbracoContentApp.manifest</DefaultName>
-    <Name>UmbracoContentApp</Name>
-    <Description>desc</Description>
+    <DefaultName>UmbracoContentApp</DefaultName>
+    <Name>Umbraco Content App</Name>
+    <Description>It creates the basic structure and files so you can start building your own Content App.</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>10</SortOrder>
     <Icon>Umbraco.ico</Icon>
   </TemplateData>
   <TemplateContent>
     <References />
-    <ProjectItem SubType="" TargetFileName="$fileinputname$.manifest" ReplaceParameters="false">package.manifest</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$safeitemname$\js\$safeitemname$.controller.js" ReplaceParameters="true">controller.js</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="$safeitemname$\html\$safeitemname$.html" ReplaceParameters="false">view.html</ProjectItem>
+    <ProjectItem SubType="" TargetFileName="package.manifest" ReplaceParameters="true">package.manifest</ProjectItem>
   </TemplateContent>
 </VSTemplate>

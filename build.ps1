@@ -10,6 +10,9 @@ $destDir = Join-Path $projectDir "Dist"
 $templatesDir = Join-Path $projectDir "Templates"
 $templates = Get-ChildItem $templatesDir
 
+# delete all files in Dist folder
+Get-ChildItem -Path $destDir -Include *.* -File -Recurse | foreach { $_.Delete() }
+
 foreach ($subfolder in $templates) {
     $destZip = $destDir + "\" + $subfolder.Name + ".zip"
     ZipFiles $destZip  $subfolder.FullName
