@@ -1,5 +1,6 @@
 ﻿using System.Web.Mvc;
 using Umbraco.Web.Models;
+using Umbraco.Web.Mvc;
 
 /// <summary>
 /// If you need complete control over how your pages are rendered then Hijacking Umbraco Routes is for you.
@@ -8,12 +9,12 @@ using Umbraco.Web.Models;
 namespace $webnamespace$
 {
 
-    public class $itemname$ : Umbraco.Web.Mvc.RenderMvcController
+    public class $safeitemname$ : RenderMvcController
     {
-        public override ActionResult Index(ContentModel model)
+        public override ActionResult Index (ContentModel model)
         {
             // Do some stuff here, then return the base method
-            return base.Index(model);
+            return base.Index (model);
         }
     }
 }

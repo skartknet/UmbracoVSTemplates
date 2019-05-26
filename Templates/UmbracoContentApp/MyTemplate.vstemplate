@@ -3,7 +3,7 @@
   <TemplateData>
     <DefaultName>UmbracoContentApp</DefaultName>
     <Name>Umbraco Content App</Name>
-    <Description>Creates the basic structure and files so you can start building your own Content App.</Description>
+    <Description>It will create the folder structure and basic files to start building a Content App. This should be created in the `~/App_Plugins` folder.</Description>
     <ProjectType>Web</ProjectType>
     <SortOrder>10</SortOrder>
     <Icon>Umbraco.ico</Icon>

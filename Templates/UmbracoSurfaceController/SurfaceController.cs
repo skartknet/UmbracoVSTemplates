@@ -8,10 +8,10 @@ using Umbraco.Web.Mvc;
 /// </summary>
 namespace $webnamespace$
 {
-    public class $itemname$ : $safeitemname$
+    public class $safeitemname$ : SurfaceController
     {
         //GET: /umbraco/surface/{controllername}/{action}/{id}
-        public ActionResult Index()
+        public ActionResult Index ()
         {
 
         }

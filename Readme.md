@@ -4,6 +4,8 @@ This project contains a collection of Umbraco Templates for Visual Studio.
 
 Using this item templates you can generate files for the sme most common extensibility areas of Umbraco. These intend to serve you as a guide to start your own projects as well as they contain some help comments and links to the official Umbraco documentation.
 
+Much of the code and comments have been taken directly from the Umbraco documentation.
+
 ## Included templates
 
 ### Api Controller
@@ -25,3 +27,11 @@ It will create the folder structure and basic files to start building a Content 
 ### Property editor
 
 It will create the folder structure and basic files to start building a Property Editor. This should be created in the `~/App_Plugins` folder.
+
+### Component
+
+Creates an Umbraco Component and a ComponentComposer to register it.
+
+## Coming
+
+- Connect to a resource (https://our.umbraco.com/documentation/Tutorials/Creating-a-Property-Editor/part-4#create-a-person-resource)
