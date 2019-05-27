@@ -32,6 +32,10 @@ It will create the folder structure and basic files to start building a Property
 
 Creates an Umbraco Component and a ComponentComposer to register it.
 
-## Coming
+### Configuration Health Check
 
-- Connect to a resource (https://our.umbraco.com/documentation/Tutorials/Creating-a-Property-Editor/part-4#create-a-person-resource)
+Creates an Umbraco Configuration Health Check.
+
+### General Health Check
+
+Creates an Umbraco General Health Check.
