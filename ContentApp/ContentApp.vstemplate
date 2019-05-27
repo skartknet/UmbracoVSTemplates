@@ -1,0 +1,17 @@
+<VSTemplate Version="3.0.0" 
+  xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>UmbracoContentApp</DefaultName>
+    <Name>Umbraco Content App</Name>
+    <Description>It will create the folder structure and basic files to start building a Content App. This should be created in the `~/App_Plugins` folder.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>Umbraco.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem TargetFileName="$safeitemname$\js\$safeitemname$.controller.js" ReplaceParameters="true">controller.js</ProjectItem>
+    <ProjectItem TargetFileName="$safeitemname$\html\$safeitemname$.html" ReplaceParameters="true">view.html</ProjectItem>
+    <ProjectItem TargetFileName="package.manifest" ReplaceParameters="true">package.manifest</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

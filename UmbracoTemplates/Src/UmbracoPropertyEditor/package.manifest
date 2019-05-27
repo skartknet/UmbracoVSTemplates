@@ -1,0 +1,33 @@
+﻿// https://our.umbraco.com/documentation/Tutorials/Creating-a-Property-Editor/
+
+{
+  // you can define multiple editors
+  "propertyEditors": [
+    {
+      /*this must be a unique alias*/
+      "alias": "$safeitemname$",
+      /*the name*/
+      "name": "$fileinputname$",
+      /*the icon*/
+      "icon": "icon-code",
+      /*grouping for "Select editor" dialog*/
+      "group": "Rich Content",
+      /*the HTML file we will load for the editor*/
+      "editor": {
+        "view": "~/App_Plugins/$safeitemname$/html/$safeitemname$.html"
+      },
+      "prevalues": {
+        "fields": [
+          {
+            "label": "Default value",
+            "description": "If value is blank, the editor will show this",
+            "key": "defaultValue",
+            "view": "textarea" /* The name "textarea" comes from the convention that all preview editors are stored in /umbraco/views/prevalueeditors/ and then found via <name>.html */
+          }
+        ]
+      }
+    }
+  ],
+  // array of files we want to inject into the application on app_start
+  "javascript": ["~/App_Plugins/$safeitemname$/js/$safeitemname$.controller.js"]
+}

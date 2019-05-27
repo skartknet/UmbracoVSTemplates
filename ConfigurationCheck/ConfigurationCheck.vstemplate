@@ -1,0 +1,15 @@
+<VSTemplate Version="3.0.0" 
+  xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>HealthCheck.cs</DefaultName>
+    <Name>Umbraco Configuration Health Check</Name>
+    <Description>Creates an Umbraco Configuration Health Check.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>Umbraco.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem TargetFileName="$safeitemname$.cs" ReplaceParameters="true">HealthCheck.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
