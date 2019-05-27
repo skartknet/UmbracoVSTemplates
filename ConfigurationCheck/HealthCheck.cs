@@ -4,19 +4,25 @@
 using System.Collections.Generic;
 using System.Linq;
 using Umbraco.Core.Services;
+using Umbraco.Core.Logging;
+using Umbraco.Web.HealthCheck;
+using Umbraco.Web.HealthCheck.Checks.Config;
 
-namespace $rootnamespace$
+namespace $rootnamespace$ {
 
         //Replace here the GUID, name, description and group of your health check
         [HealthCheck ("D0F7599E-9B2A-4D9E-9883-81C7EDC5616F", "$fileinputname$",
             Description = "Checks to make sure macro errors are not set to throw a YSOD (yellow screen of death), which would prevent certain or all pages from loading completely.",
             Group = "Configuration")]
         public class $safeitemname$ : AbstractConfigCheck {
+
         private readonly ILocalizedTextService _textService;
+        private readonly ILogger _logger;
 
         // Use the built-in Umbraco DI container to bring any dependencies you need
-        public $safeitemname$ (HealthCheckContext healthCheckContext) : base (healthCheckContext) {
-            _textService = healthCheckContext.ApplicationContext.Services.TextService;
+        public $safeitemname$ (ILocalizedTextService textService, ILogger logger) : base (textService) {
+            _textService = textService;
+            _logger = logger;
         }
 
         // FilePath is the relative path to which config file you want to check
