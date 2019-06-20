@@ -1,10 +1,12 @@
-# Umbraco Templates for Visual Studio
+# Umbraco V8 Templates for Visual Studio
 
-This project contains a collection of Umbraco Templates for Visual Studio.
+This project contains a collection of Umbraco V8 Templates for Visual Studio.
 
-Using this item templates you can generate files for the sme most common extensibility areas of Umbraco. These intend to serve you as a guide to start your own projects as well as they contain some help comments and links to the official Umbraco documentation.
+Using this item templates you can generate files for some of the most common extensibility areas of Umbraco. These intend to serve you as a guide to start your own projects as well as they contain some help comments and links to the official Umbraco documentation.
 
 Much of the code and comments have been taken directly from the Umbraco documentation.
+
+![Item Templates](https://github.com/skartknet/UmbracoVSTemplates/blob/master/docs/screenshot1.png?raw=true)
 
 ## Included templates
 
